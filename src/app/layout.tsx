@@ -1,10 +1,14 @@
-import Header from "@/components/header/Header";
+import Header from "@/components/Header/Header";
+import "./globals.css"
+import Footer from "@/components/Footer/Footer";
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
 
     <html lang="pt-BR">
@@ -14,14 +18,16 @@ export default function RootLayout({
 
         {children}
 
-      </body>
+        <Footer />
 
+      </body>
     </html>
 
   );
 }
 
 /*
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -55,4 +61,5 @@ export default function RootLayout({
     </html>
   );
 }
-  */
+
+*/
