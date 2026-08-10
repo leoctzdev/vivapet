@@ -1,6 +1,6 @@
 import { Animal } from "../Animal/Animal";
 import { TipoCuidador } from "../Enums/Enums";
-import { RegistroUso } from "../RegistroUso/RegistroUso";
+
 
 export class Cuidador{
 
@@ -92,10 +92,5 @@ export class Cuidador{
         return this._animais;
     }
 
-    /*
-    public registrarUso(id: string, dataUso: Date, quantidadeUso: number, observacoes: string, animal: Animal){
-
-        const novoRegistro = new RegistroUso(id, dataUso, quantidadeUso, observacoes, this, animal);
-
-    } */
+    
 }
