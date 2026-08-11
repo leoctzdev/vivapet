@@ -12,7 +12,7 @@ export class Cuidador{
     private readonly _dataCadastro: Date;
     private _ativo: boolean;
 
-    private _animais: Animal[];
+    private _animaisSobResponsabilidade: Animal[];
 
     constructor(id: string, nome: string, tipo: TipoCuidador, cpf: string, email: string, dataCadastro: Date, ativo: boolean){
 
@@ -24,7 +24,7 @@ export class Cuidador{
         this._dataCadastro = dataCadastro;
         this._ativo = ativo;
 
-        this._animais = [];
+        this._animaisSobResponsabilidade = [];
     }
 
     public get id(){
@@ -79,17 +79,17 @@ export class Cuidador{
     // ADICIONAR ANIMAL AO CUIDADOR:
     public adicionarAnimal(animal: Animal){
 
-        if(this._animais.length >= 10){
+        if(this._animaisSobResponsabilidade.length >= 10){
             console.log('Limite excedido');
             console.log('Um cuidador pode cuidar de no máximo 10 animais.');
 
         } else{
-            this._animais.push(animal);
+            this._animaisSobResponsabilidade.push(animal);
         }
     }
 
     public listarAnimais(){
-        return this._animais;
+        return this._animaisSobResponsabilidade;
     }
 
     
