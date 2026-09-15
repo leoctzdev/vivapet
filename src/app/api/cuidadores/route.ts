@@ -1,6 +1,5 @@
 import { CuidadorController } from "@/controllers/CuidadorController/CuidadorController";
 
-
 const cuidadorController = new CuidadorController();
 
 export async function GET(req: Request) {
@@ -8,6 +7,5 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-
     return cuidadorController.cadastrar(req);
 }
